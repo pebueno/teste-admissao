@@ -1,0 +1,59 @@
+{
+  "name": "fake-atm",
+  "version": "1.0.0",
+  "description": "MERN Application using Clean Architecture build for clients send money via internet.",
+  "main": "app.js",
+  "scripts": {
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "server": "nodemon app.js",
+    "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pebueno/teste-admissao.git"
+  },
+  "keywords": [
+    "MERN",
+    "Clean",
+    "Architecture",
+    "Database",
+    "MongoDB",
+    "CRUD",
+    "React.js",
+    "Express.js",
+    "Node.js",
+    "Bootstrap",
+    "Authentication",
+    "Mongoose",
+    "Heroku",
+    "Concurrently",
+    "Git"
+  ],
+  "author": "Pedro Ivo Bueno Sartório",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pebueno/teste-admissao/issues"
+  },
+  "homepage": "https://github.com/pebueno/teste-admissao#readme",
+  "engines": {
+    "node": "14.15.3"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.2.1",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.8",
+    "nodemon": "^2.0.12",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validation": "0.0.1",
+    "validator": "^13.6.0"
+  }
+}
