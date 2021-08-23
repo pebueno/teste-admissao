@@ -1,5 +1,5 @@
 {
-  "name": "fake-atm",
+  "name": "bank-atm",
   "version": "1.0.0",
   "description": "MERN Application using Clean Architecture build for clients send money via internet.",
   "main": "app.js",
