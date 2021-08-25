@@ -60,3 +60,5 @@ default.json
 
 # next.js build output
 .next
+
+/config/keys_dev.js
